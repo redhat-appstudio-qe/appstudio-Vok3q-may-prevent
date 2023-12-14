@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-rlzw
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-drsp-tenant/appstudio/devfile-sample-python-basic-rlzw@sha256:220cfe57959f9f9a61c6439da9bcdea757c0e537eae23e17545c18eb68fb1cfa
+        name: my-python
+        resources: {}
+status: {}
